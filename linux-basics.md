@@ -57,7 +57,7 @@ Linux:
         (Explore linux default directories and their purpose https://www.thegeekstuff.com/2010/09/linux-file-system-structure/ )
         Switch from one directory 
           $ cd
-                1) `cd `-> Takes you to your home directory 
+                1) `cd ` -> Takes you to your home directory 
                 2) `cd / ` -> Take you to `/` directory
                 3) `cd -` -> Takes you to previous working directory
           $ pwd 
