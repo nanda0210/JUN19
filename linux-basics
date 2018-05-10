@@ -43,11 +43,19 @@ Linux:
         Type of file can be determined by ls -l command and the first character denotes that.
           - -> Regular File
           d -> directory 
-
+        Note: There are total 7 types of files, Explore them.
+        
     Files:
         Create file     - touch 
         Remove file     - rm
         Rename a file   - mv
+          $ mv source target
+            1) If target does not exist ??
+              Rename the file 
+            2) If target exists ??
+              Overwrite the file (1. Remove target , 2. Rename Source to target )
+            3) If target exists and if it is a directory.
+              Moves file into target directory 
         Copy a file     - cp
 
     Directories:
@@ -57,18 +65,32 @@ Linux:
         (Explore linux default directories and their purpose https://www.thegeekstuff.com/2010/09/linux-file-system-structure/ )
         Switch from one directory 
           $ cd
-                1) `cd ` -> Takes you to your home directory 
-                2) `cd / ` -> Take you to `/` directory
-                3) `cd -` -> Takes you to previous working directory
+                1) cd  -> Takes you to your home directory 
+                2) cd / -> Take you to `/` directory
+                3) cd - -> Takes you to previous working directory
+                4) cd ..  -> Takes to parent directory (.. denotes parent directory,   . denotes present directory)
+                
           $ pwd 
 
         Create Directory 
+          $ mkdir dir-name
         Remove a Directory 
+          $ rm  -r dir-name
         Rename Directory 
+          $ mv dir-name new-dir-name
+              1) If new-dir-name does not exist ?? 
+                  It is just renaming directory 
+              2) If new-dir-name already exists ??
+                  It is going to move the directory into new-dir-name
+                  
         Copy a Directory 
-
+          $ cp -r source-dir remote-dir
+          
         Move files from one dir to another
         Copy file from one dir to another
+    
+    
+    
     Search Files & Directories:
     Utilities:
   Admin:
