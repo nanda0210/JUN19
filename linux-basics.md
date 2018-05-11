@@ -95,8 +95,11 @@ Linux:
       ->  vi / vim / nano / gedit 
       *** vi / vim 
 ```
-      
-    ![image](https://user-images.githubusercontent.com/29029753/39901710-d5aabb34-54e7-11e8-9d9c-428c41e3cb72.png)
+Image of VI Editor:
+![image](https://user-images.githubusercontent.com/29029753/39901770-3a6d9154-54e8-11e8-8d7a-a7ff52ce7d4f.png)
+
+
+
 ```   
     Search Files & Directories:
     Utilities:
