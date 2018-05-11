@@ -1,3 +1,5 @@
+
+```
 Linux:
 
   Basic:
@@ -92,9 +94,10 @@ Linux:
     Editor:
       ->  vi / vim / nano / gedit 
       *** vi / vim 
+```
       
     ![image](https://user-images.githubusercontent.com/29029753/39901710-d5aabb34-54e7-11e8-9d9c-428c41e3cb72.png)
-   
+```   
     Search Files & Directories:
     Utilities:
   Admin:
@@ -109,4 +112,4 @@ Linux:
     Disk Management:
     Network Management:
 
-
+```
