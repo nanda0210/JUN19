@@ -102,7 +102,52 @@ Image of VI Editor:
 
 ```   
     Search Files & Directories:
+      1. Find Command.  
+          $ find /etc "*.conf"
+          $ find /home/ec2-user -name "*.conf" -type f
+          $ find /home/ec2-user -name "*.conf" -type d
+          
+      2. Locate command.
+         locate command will not be there by default , hence lets install and use it.
+          $ sudo yum install mlocate -y
+          $ sudo updatedb
+          
+          $ locate "*.conf"
+          $ locate "*.conf" | grep /home
+    Filter Commands:
+      Perform this command before going with commands.
+        $ sudo cp /var/log/messages .;sudo chmod 666 messages
+      -> cat 
+        $ cat messages
+      -> wc 
+        $ wc -l  messages
+        $ wc -c  messages
+      -> head
+        $ head messages
+        $ head -2 messages
+      -> tail 
+        $ tail messages
+        $ tail -n 2 messages
+      -> grep 
+        $ grep yum messages 
+        $ grep yum messages
+      -> cut
+        $ cut -d ':' -f 1 /etc/passwd
+      
     Utilities:
+      wget command is nott there by default in linux, Hence install it.
+      $ sudo yum install wget -y
+      -> wget 
+        $ wget http://www-eu.apache.org/dist//httpd/httpd-2.4.33.tar.gz
+        
+      -> curl 
+        Curl is command to browse over CLI.
+        $ curl 
+        
+      -> tar 
+      
+      -> Pipes
+      
   Admin:
     Package Management:
     Service Management:
