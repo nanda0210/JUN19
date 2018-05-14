@@ -135,19 +135,35 @@ Image of VI Editor:
         $ cut -d ':' -f 1 /etc/passwd
       
     Utilities:
-      wget command is nott there by default in linux, Hence install it.
+      wget command is not there by default in linux, Hence install it.
       $ sudo yum install wget -y
       -> wget 
         $ wget http://www-eu.apache.org/dist//httpd/httpd-2.4.33.tar.gz
         
       -> curl 
         Curl is command to browse over CLI.
-        $ curl 
+        $ curl <URL>
         
       -> tar 
+          $ tar -xz httpd-2.4.33.tar.gz 
+          
+          .gz  -> Gunzip
+          .bz2  -> Bunzip2 
+            Bzip2 is not available in system by default, Install it using the following command.
+            
+          $ sudo yum install bzip2 -yy
+          
+      -> Check size of the file 
+          $ ls -lh 
+          
+      -> Check the size of the directory & files
+          $ du  -sh *
       
-      -> Pipes
-      
+      -> Pipes  (|) 
+ ```
+![image](https://user-images.githubusercontent.com/29029753/39973814-9186c5ea-5741-11e8-8905-485dcd20e52e.png)
+
+```
   Admin:
     Package Management:
     Service Management:
