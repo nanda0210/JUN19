@@ -165,7 +165,42 @@ Image of VI Editor:
 
 ```
   Admin:
+  
+    Before starting any admin commands, become a root user to perform admin activities.
+    
+    $ sudo su - 
+    
     Package Management:
+      Installation of softwares are three types.
+      1) RPM based installation (EXE based installation)
+        Redhat package manager / RPM package manager
+        # rpm <- Managing rpm's / But this is not used now.
+        
+        # yum <- Yellowdog Updated Modifier
+        
+        List Packages
+          local (installed packages)
+              # yum list installed
+          remote (not installed, but are available to install)
+              # yum list available 
+          both (local & remote)
+              # yum list {or} # yum list all 
+         
+        Install Package 
+            # yum install package-name -y
+            
+        Remove a Package
+            # yum remove pacakge-name -y
+            # yum erase package-name -y
+            
+        Update a Package 
+            # yum check-update 
+            # yum update pack-name -y
+            # yum upgrade pack-name -y
+            
+      2) Binary Installation  <- Will be discussed in project
+      3) Source based Installation <- Will be discussed in project
+      
     Service Management:
     User Management:
         - Users
