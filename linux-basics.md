@@ -151,7 +151,7 @@ Image of VI Editor:
           .bz2  -> Bunzip2 
             Bzip2 is not available in system by default, Install it using the following command.
             
-          $ sudo yum install bzip2 -yy
+          $ sudo yum install bzip2 -y
           
       -> Check size of the file 
           $ ls -lh 
