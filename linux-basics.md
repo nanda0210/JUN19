@@ -170,6 +170,19 @@ Image of VI Editor:
     
     $ sudo su - 
     
+    How to stop a server:
+      # init 0
+      # shutdown -h 
+      # halt
+      
+    How to restart a server:
+      # init 6
+      # reboot
+      # shutdown -r
+    
+    validate system reboot by using 
+      $ uptime
+    
     Package Management:
       Installation of softwares are three types.
       1) RPM based installation (EXE based installation)
@@ -198,14 +211,64 @@ Image of VI Editor:
             # yum update pack-name -y
             # yum upgrade pack-name -y
             
+            # yum update -y
+              -> This is to apply all package updates.
+            
       2) Binary Installation  <- Will be discussed in project
       3) Source based Installation <- Will be discussed in project
       
     Service Management:
+      CentOS7:
+        # systemctl list-units -a -t service  <- To list services which are enabled
+        # systemctl list-unit-files -a 
+        # systemctl status service-name 
+        # systemctl start service-name
+        # systemctl stop service-name
+        # systemctl restart service-name
+        
+        # systemctl enable service-name
+        # systemctl disable service-name
+        
+      CentOS6:
+        # service service-name status
+        # service service-name start
+        # service service-name stop
+        # service service-name restart 
+        
+        # chkconfig --list    <- To list all the services
+        # chkconfig service-name on
+        # chkconfig service-name off
+        
+        
     User Management:
-        - Users
         - Groups
+          # groupadd group-name
+          Above command will add a group, but to verify group is added or not.. Run the following commands
+          # getent group
+          
+          # groupdel
+          # groupmod
+          
+        - Users
+          # useradd -g devops raju 
+          Check user created or not.
+          # id raju
+          # getent passwd 
+          
+          # usermod 
+          # userdel
+          
+          To switch from one user  to another user 
+          $ su - username <- It asks for password if you are normal user
+          
+          To set/reset the password for a user, 
+          # passwd raju          
+        
         - Sudoers
+          # visudo
+          
+          rahim ALL=(ALL) NOPASSWD: ALL
+        
         - File/Dir Permissions
     
     Disk Management:
