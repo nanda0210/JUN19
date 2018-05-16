@@ -270,8 +270,18 @@ Image of VI Editor:
           rahim ALL=(ALL) NOPASSWD: ALL
         
         - File/Dir Permissions
-    
+```
+![image](https://user-images.githubusercontent.com/29029753/40090787-9df6627c-58d1-11e8-9d2d-d1cf283a6c50.png)
+```
     Disk Management:
+      # fdisk -l
+      # df -h
     Network Management:
+      # ip a
+      # netstat -lntp 
+    Process Management
+      # ps -ef 
+      # ps -ef | grep proccess-name
+      # kill <PID>
 
 ```
